@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:QuizAppSwiper"
+             x:Class="QuizAppSwiper.QuizSwiper">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="" x:Name="theLabel" FontSize="24"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <local:SwipeContainer Swipe="OnSwiped" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand">
+                <Image x:Name="theImage" Source="" Aspect="AspectFit"
+                       HeightRequest="{OnPlatform Android=250}"
+                       HorizontalOptions="Center" />
+            </local:SwipeContainer>
+            <Button x:Name="RestartButton" BackgroundColor="LightBlue" Text="Start Again" FontSize="24" IsVisible="false" Clicked="Restart_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

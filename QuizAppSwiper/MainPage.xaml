@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAppSwiper.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="LightPink" Padding="24" CornerRadius="0">
+            <Label Text="True or False!" HorizontalTextAlignment="Center" TextColor="MediumPurple" FontSize="46"/>
+        </Frame>
+        <Label Text="A simple personality quiz" FontSize="30" HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+        <Button Text="Start" FontSize="30" HeightRequest="60" BackgroundColor="LightPink" TextColor="Black" Clicked="Start_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
